@@ -24,8 +24,11 @@ function addTodo(addNew){
     li.id = addNew.id
     const span = document.createElement("span");
     span.innerText = addNew.text;
+    span.classList.add("날라오기")
     const btn = document.createElement("button");
-    btn.innerText = "X";
+    btn.innerText = "v";
+    btn.classList.add("gradient-btn")
+    btn.classList.add("날라오기2")
     li.appendChild(span);
     li.appendChild(btn);
     todoList.appendChild(li);

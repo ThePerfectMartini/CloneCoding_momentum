@@ -10,11 +10,12 @@ function timeGoesOn()
     let minutes = today.getMinutes()
     let AMorPM = ""
     let halfHours = ""
-    if (hours < 13){
-        AMorPM = "AM"
-        halfHours = hours
-    } else AMorPM = "PM";
-    halfHours = hours - 12
+    if (hours > 12){
+        AMorPM = "PM";
+        halfHours = hours - 12
+    } else 
+    AMorPM = "AM"
+    halfHours = hours
 
     let padHours = halfHours.toString().padStart(2,"0")
     let padMinutes = minutes.toString().padStart(2,"0")

@@ -10,9 +10,41 @@
         z-index: -1;
         animation: 1s linear;
       }
-body{
-    color: white
+      body{
+        font-size: 1.2rem;
+        font-family: "Open Sans", sans-serif;
+        color: white;
+        background-color: #fff;
+        margin: 0;
+        padding: 4rem;
+        text-align: center;
+      }
+
+ul{
+  list-style: none;
+
 }
+input{
+  text-align: center;
+}
+.배경{
+  font-size: larger;
+}
+
+.fade-in-box {
+  display: inline-block;
+  padding: 10px;
+  animation: fadein 3s;
+  -webkit-animation: fadein 1.5s; /* Safari and Chrome */
+}
+  @-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+  }
 
 .날라오기{
     position:relative;
@@ -38,6 +70,55 @@ body{
       left:50px;
     }
   }
+
+
+
+  .날라오기3{
+    position: relative;
+    margin-left: 70px;
+  }
+
+
+
+  .날라오기2{
+    margin-left: 70px;
+    background:none;
+    color:#fff;
+    border:white;
+    position:relative;
+    height:25px;
+    width: 25px;
+    font-size: 20px;
+    cursor:pointer;
+    transition:800ms ease all;
+    outline:white;
+  }
+  button:hover{
+    background:none;
+    color:#1AAB8A;
+  }
+  button:before,button:after{
+    content:'';
+    position:absolute;
+    top:0;
+    right:0;
+    height:2px;
+    width:0;
+    background: #1AAB8A;
+    transition:400ms ease all;
+  }
+  button:after{
+    right:inherit;
+    top:inherit;
+    left:0;
+    bottom:0;
+  }
+  button:hover:before,button:hover:after{
+    width:100%;
+    transition:800ms ease all;
+  }
+  
+  
 
 
   

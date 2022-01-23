@@ -2,7 +2,7 @@ function random(max){
     return Math.floor(Math.random() * max)
 }
 
-const img = ["0.jpg", "1.jpg", "2.jpg"]
+const img = ["0.jpg", "1.jpg", "2.jpg", "3.jpg"]
 
 const randomImg = random(img.length)
 
