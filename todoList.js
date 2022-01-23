@@ -29,6 +29,7 @@ function addTodo(addNew){
     btn.innerText = "v";
     btn.classList.add("gradient-btn")
     btn.classList.add("날라오기2")
+    btn.classList.add("fade-in-box")
     li.appendChild(span);
     li.appendChild(btn);
     todoList.appendChild(li);

@@ -27,13 +27,9 @@ ul{
 input{
   text-align: center;
 }
-.배경{
-  font-size: larger;
-}
 
 .fade-in-box {
   display: inline-block;
-  padding: 10px;
   animation: fadein 3s;
   -webkit-animation: fadein 1.5s; /* Safari and Chrome */
 }
